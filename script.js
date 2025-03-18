@@ -8,7 +8,7 @@ function fatorial(n){
   return fat
 }
 
-console.log("iterativo: "+fatorial(5))
+console.log("Fatorial iterativo: "+fatorial(5))
 
 function fatorialRec(n){
     if(n == 0){
@@ -18,4 +18,14 @@ function fatorialRec(n){
     }
 }
 
-console.log("Recursivo: "+fatorialRec(5))
+console.log("Fatorial recursivo: "+fatorialRec(5))
+
+function soma(n){
+    if(n==1){
+        return 1
+    } else {
+        return soma(n-1) + n
+    }
+}
+
+console.log("Soma recursiva: "+soma(5))
